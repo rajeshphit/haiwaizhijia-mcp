@@ -1,0 +1,16 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Haiwaizhijia/Haiwaizhijia.com-mcp",
+  "description": "Real estate dealer for Austin, Dellas, Houston in Texas USA",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/Haiwaizhijia/Haiwaizhijia.com-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "transportType": "streamable-http",
+      "url": "https://Haiwaizhijia.com/mcp-haiwaizhijia"
+    }
+  ]
+}
