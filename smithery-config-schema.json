@@ -1,15 +1,27 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
+  "title": "Haiwaizhijia Texas Villa Configuration",
+  "description": "Configuration for Texas Villa Investments when connecting via Smithery. Values are passed as query parameters.",
   "properties": {
     "city": {
       "type": "string",
-      "description": "Preferred Texas city Austin Houston Dallas",
-      "default": "Austin"
+      "title": "Preferred City",
+      "description": "Preferred Texas city Austin Houston Dallas with 6-8% ROI",
+      "default": "Austin",
+      "x-from": {
+        "query": "city"
+      }
     },
     "budget": {
       "type": "number",
-      "description": "Budget USD e.g. 500000",
-      "default": 500000
+      "title": "Budget USD",
+      "description": "Budget USD e.g. 500000 for villa search",
+      "default": 500000,
+      "x-from": {
+        "query": "budget"
+      }
     }
-  }
+  },
+  "additionalProperties": false
 }

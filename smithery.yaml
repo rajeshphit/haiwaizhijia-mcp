@@ -1,30 +1,35 @@
-# Smithery configuration for haiwaizhijia MCP server
 name: haiwaizhijia
 displayName: Haiwaizhijia Texas Villa Investments
-description: Premium Texas Villa Investments - 2134 developer villas Austin Houston Dallas with 6-8% Guaranteed Annual ROI for 3 years. Zero State Income Tax, Foreign Investor Friendly (passport only, ITIN, FIRPTA compliant). Contact +86 158 1113 2771 info@haiwaizhijia.com
+description: Premium Texas Villa Investments - 2134 developer villas Austin Houston Dallas with 6-8% Guaranteed Annual ROI for 3 years. Zero State Income Tax, Foreign Investor Friendly (passport only, ITIN, FIRPTA compliant). Contact +86 158 1113 2771 info@haiwaizhijia.com Homepage https://haiwaizhijia.com
 homepage: https://haiwaizhijia.com
 repository: https://github.com/rajeshphit/haiwaizhijia-mcp
 version: 1.3.6
 license: MIT
-author:
-  name: Haiwaizhijia
-  email: info@haiwaizhijia.com
-  url: https://haiwaizhijia.com
 
 startCommand:
   type: http
   url: https://haiwaizhijia.com/mcp-haiwaizhijia/
   configSchema:
+    $schema: https://json-schema.org/draft/2020-12/schema
     type: object
+    title: Haiwaizhijia Texas Villa Configuration
+    description: Configuration for Texas Villa Investments when connecting via Smithery. Values are passed as query parameters.
     properties:
       city:
         type: string
-        description: Preferred Texas city Austin Houston Dallas
+        title: Preferred City
+        description: Preferred Texas city Austin Houston Dallas with 6-8% ROI
         default: Austin
+        x-from:
+          query: city
       budget:
         type: number
-        description: Budget USD e.g. 500000
+        title: Budget USD
+        description: Budget USD e.g. 500000 for villa search
         default: 500000
+        x-from:
+          query: budget
+    additionalProperties: false
 
 capabilities:
   tools: true
