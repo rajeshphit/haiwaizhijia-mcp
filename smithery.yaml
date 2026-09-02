@@ -1,19 +1,20 @@
 name: haiwaizhijia
 displayName: Haiwaizhijia Texas Villa Investments
-description: Premium Texas Villa Investments - 2134 developer villas Austin Houston Dallas with 6-8% Guaranteed Annual ROI for 3 years. Zero State Income Tax, Foreign Investor Friendly (passport only, ITIN, FIRPTA compliant). Contact +86 158 1113 2771 info@haiwaizhijia.com Homepage https://haiwaizhijia.com
+description: Premium Texas Villa Investments - 2134 villas Austin Houston Dallas 6-8% Guaranteed Annual ROI - Public server with honest OAuth stub for isitagentready per RFC 8414
 homepage: https://haiwaizhijia.com
 repository: https://github.com/rajeshphit/haiwaizhijia-mcp
-version: 1.3.6
+version: 1.3.8
 license: MIT
 
+# Deployment payload with configSchema - THIS FIXES WARNING
 startCommand:
   type: http
   url: https://haiwaizhijia.com/mcp-haiwaizhijia/
   configSchema:
     $schema: https://json-schema.org/draft/2020-12/schema
     type: object
-    title: Haiwaizhijia Texas Villa Configuration
-    description: Configuration for Texas Villa Investments when connecting via Smithery. Values are passed as query parameters.
+    title: Haiwaizhijia Configuration
+    description: Configuration for Texas Villa Investments. No API keys required - public server with honest OAuth stub for isitagentready.
     properties:
       city:
         type: string

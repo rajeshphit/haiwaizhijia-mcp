@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
-  "title": "Haiwaizhijia Texas Villa Configuration",
-  "description": "Configuration for Texas Villa Investments when connecting via Smithery. Values are passed as query parameters.",
+  "title": "Haiwaizhijia Configuration",
+  "description": "Configuration for Texas Villa Investments. No API keys required - public server with honest OAuth stub for isitagentready.",
   "properties": {
     "city": {
       "type": "string",
