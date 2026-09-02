@@ -1,27 +1,16 @@
+# Smithery configuration for haiwaizhijia MCP server
 name: haiwaizhijia
-displayName: Haiwaizhijia Texas Villa Investments 6-8% ROI
-description: Premium Texas Villa Investments 2134 villas Austin Houston Dallas 6-8% Guaranteed Annual ROI 3-Year Guaranteed Rental Income Zero State Income Tax Foreign Investor Passport Only ITIN FIRPTA Compliant Contact +86 158 1113 2771 info@haiwaizhijia.com
+displayName: Haiwaizhijia Texas Villa Investments
+description: Premium Texas Villa Investments - 2134 developer villas Austin Houston Dallas with 6-8% Guaranteed Annual ROI for 3 years. Zero State Income Tax, Foreign Investor Friendly (passport only, ITIN, FIRPTA compliant). Contact +86 158 1113 2771 info@haiwaizhijia.com
 homepage: https://haiwaizhijia.com
 repository: https://github.com/rajeshphit/haiwaizhijia-mcp
-icon: https://haiwaizhijia.com/favicon.ico
-version: 1.3.0
-keywords:
-    - mcp
-    - texas
-    - real-estate
-    - villa
-    - investment
-    - roi
-    - foreign-investor
-    - austin
-    - houston
-    - dallas
-    - 6-8-percent-roi
-    - zero-state-tax
+version: 1.3.6
+license: MIT
 author:
   name: Haiwaizhijia
   email: info@haiwaizhijia.com
-license: MIT
+  url: https://haiwaizhijia.com
+
 startCommand:
   type: http
   url: https://haiwaizhijia.com/mcp-haiwaizhijia/
@@ -34,21 +23,10 @@ startCommand:
         default: Austin
       budget:
         type: number
-        description: Budget USD e.g., 500000
+        description: Budget USD e.g. 500000
         default: 500000
-    required: []
-  exampleConfig:
-    city: Austin
-    budget: 500000
-tools:
-    - name: list_texas_villa_inventory
-    - name: search_villas_by_criteria
-    - name: get_roi_calculator
-    - name: check_foreign_eligibility
-    - name: get_legal_clearances
-    - name: book_virtual_tour
-    - name: get_investment_quote
-prompts:
-    - name: search_texas_villa
-    - name: calculate_investment_roi
-    - name: check_foreign_buyer_eligibility
+
+capabilities:
+  tools: true
+  prompts: true
+  resources: false
