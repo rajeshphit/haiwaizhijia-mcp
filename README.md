@@ -1,5 +1,9 @@
 # Haiwaizhijia Texas Villa Investments MCP Server
 
+## 海外之家 Texas Villa 6-8% 保租 3年
+Contact: +86 158 1113 2771 WeChat
+Austin Houston Dallas 2134套别墅零州税
+
 Premium Texas Villa Investments with 6-8% Guaranteed Annual ROI - Direct Primary Developer Allocation for foreign investors.
 
 **Contact: +86 158 1113 2771 | info@haiwaizhijia.com | https://haiwaizhijia.com**
