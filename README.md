@@ -1,85 +1,76 @@
-# Haiwaizhijia - Texas Real Estate MCP Server (Agent 5 Ready 100/100)
+# Haiwaizhijia Texas Villa Investments MCP Server
 
-**Real estate dealer for Austin, Dallas, Houston in Texas USA**
-Level 5 Agent-Native on [isitagentready.com](https://isitagentready.com) - AI agents can search, list, and book viewings automatically.
+Premium Texas Villa Investments with 6-8% Guaranteed Annual ROI - Direct Primary Developer Allocation for foreign investors.
 
-**MCP Endpoint:** `https://Haiwaizhijia.com/mcp-haiwaizhijia`
-**Server Card:** `https://Haiwaizhijia.com/.well-known/mcp/server-card.json`
-**AI Catalog (ARD):** `https://Haiwaizhijia.com/.well-known/ai-catalog.json`
+**Contact: +86 158 1113 2771 | info@haiwaizhijia.com | https://haiwaizhijia.com**
 
-## 🏠 What We Do
+## Tools
 
-We are a Texas-focused real estate dealer covering:
-- **Austin, TX** - Downtown, South Congress, Westlake, Cedar Park, Round Rock
-- **Dallas, TX** - Downtown Dallas, Highland Park, Frisco, Plano, Irving
-- **Houston, TX** - Galleria, The Heights, Sugar Land, Katy, Cypress
+| Tool | Description |
+|------|-------------|
+| `list_texas_villa_inventory` | List 2134 Texas villas Austin Silicon Hills, Houston cash flow, Dallas luxury with 6-8% guaranteed ROI 3 years |
+| `search_villas_by_criteria` | Search villas by city Austin/Houston/Dallas, budget 300k-1M, bedrooms 3-5, zero state income tax |
+| `get_roi_calculator` | Calculate ROI 6-8% guaranteed annual rental, zero state income tax, stay or rent flexibility after year 3 |
+| `check_foreign_eligibility` | Check foreign investor eligibility - passport only, no US citizenship needed, ITIN FIRPTA compliant |
+| `get_legal_clearances` | Get verified government legal clearances - municipal zoning approved, TCEQ certified, Texas property code verified |
+| `book_virtual_tour` | Book virtual tour or on-site visit for Texas villas - Mandarin/English support |
+| `get_investment_quote` | Get investment quote - purchase price, 3-year guaranteed rental income, closing costs, ITIN FIRPTA fees |
 
-Specializing in residential, commercial, and investment properties for international buyers.
+## Installation
 
-## 🛠️ MCP Tools for AI Agents
+### Claude Desktop
 
-- `list_properties` - List all available properties in Austin, Dallas, Houston
-- `search_properties` - Search by location (Austin/Dallas/Houston), price range, bedrooms, bathrooms, property type (house, condo, apartment, commercial, land), year built, sqft
-- `get_property_details` - Full details: MLS ID, price, address, HOA, taxes, schools, walk score, 3D tour link
-- `schedule_viewing` - Book in-person or virtual tour, with calendar integration
-- `get_market_report` - Monthly market report for Austin, Dallas, Houston - median price, inventory, days on market
-
-### Example Queries for AI Agents:
-- "List 3-bed houses in Austin under $500k"
-- "Search Dallas condos near downtown with 2 baths"
-- "Get details for property at 123 Main St, Houston"
-- "Schedule viewing for tomorrow at 2pm"
-- "Get Austin market report for July 2026"
-
-## 🤖 For AI Agents & LLMs
-
-This MCP server is discoverable via:
-- **MCP Server Card:** `/.well-known/mcp/server-card.json` (SEP-1649)
-- **ARD Catalog:** `/.well-known/ai-catalog.json` (specVersion 1.0)
-- **DNS TXT:** `_catalog._agents.Haiwaizhijia.com = "url=https://Haiwaizhijia.com/.well-known/ai-catalog.json"`
+Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 
 ```json
 {
   "mcpServers": {
-    "haiwaizhijia-realestate": {
+    "haiwaizhijia": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-fetch"],
-      "env": {
-        "MCP_SERVER_URL": "https://Haiwaizhijia.com/mcp-haiwaizhijia"
-      }
+      "args": ["-y", "@rajesh/haiwaizhijia-mcp"],
+      "env": {}
     }
   }
 }
 ```
 
-## 🌐 Agent Readiness - 100/100 Level 5
+### Remote HTTP (Direct)
 
-We publish:
-- `/.well-known/mcp/server-card.json` - MCP discovery
-- `/.well-known/ai-catalog.json` - ARD discovery
-- `/llms.txt` and `/agents.md` for LLM context
-- `robots.txt` with AI bot Allow rules
-- Link headers RFC 8288
+```json
+{
+  "mcpServers": {
+    "haiwaizhijia": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://haiwaizhijia.com/mcp-haiwaizhijia/"]
+    }
+  }
+}
+```
 
-Check: https://isitagentready.com/Haiwaizhijia.com
+### Smithery
 
-## 📦 GitHub Repository
+Install via Smithery:
 
-- **Repo:** `github.com/gaier/Haiwaizhijia-com-mcp`
-- **Official Registry:** `registry.modelcontextprotocol.io`
-- **Glama.ai:** `https://glama.ai/mcp/servers/@gaier/Haiwaizhijia-com-mcp`
+```
+npx @smithery/cli install rajesh/haiwaizhijia
+```
 
-This is one of 5 repos under same GitHub account `gaier-` (factory, trading, real estate).
+## Usage
 
-## 📞 Contact
+Use this server to help foreign investors find Texas villas:
 
-- **Company:** Haiwaizhijia
-- **Texas Markets:** Austin, Dallas, Houston
-- **China Office:** Floor 2, No.6 Hengxing Road, Guzhen, Zhongshan, Guangdong 528421
-- **Phone / WhatsApp:** +86-15811132771
-- **Website:** https://Haiwaizhijia.com
+1. **List inventory**: Call `list_texas_villa_inventory` with city=Austin, roi_min=7 to see available villas
+2. **Search by criteria**: Call `search_villas_by_criteria` with city, budget_max, bedrooms
+3. **Calculate ROI**: Call `get_roi_calculator` with purchase_price=450000 to get guaranteed income
+4. **Check eligibility**: Call `check_foreign_eligibility` with nationality=China
+5. **Get quote**: Call `get_investment_quote` with villa_id
 
-## 🏷️ Maintainer
+**Contact for purchase: +86 158 1113 2771 | info@haiwaizhijia.com | WhatsApp same**
 
-`gaier-` - Same GitHub account for all 5 websites (factory + trading + real estate)
-`glama.json`: `{"maintainers": ["gaier-"]}`
+## Homepage
+
+https://haiwaizhijia.com
+
+## License
+
+MIT

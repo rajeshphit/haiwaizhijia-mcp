@@ -1,0 +1,15 @@
+# Smithery configuration for Haiwaizhijia Texas Villa MCP
+startCommand:
+  type: http
+  url: https://haiwaizhijia.com/mcp-haiwaizhijia/
+  configSchema:
+    type: object
+    properties: {}
+  exampleConfig: {}
+
+name: Haiwaizhijia Texas Villa Investments 6-8% ROI
+displayName: Haiwaizhijia Texas Villas 6-8% Guaranteed ROI
+description: Premium Texas Villa Investments 2134 villas Austin Houston Dallas 6-8% Guaranteed Annual ROI 3-Year Guaranteed Rental Income Zero State Income Tax Foreign Investor Passport Only ITIN FIRPTA Compliant Contact +86 158 1113 2771
+homepage: https://haiwaizhijia.com
+repository: https://github.com/rajeshphit/haiwaizhijia
+icon: https://haiwaizhijia.com/favicon.ico
