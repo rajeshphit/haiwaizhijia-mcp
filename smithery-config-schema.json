@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "city": {
+      "type": "string",
+      "description": "Preferred Texas city Austin Houston Dallas",
+      "default": "Austin"
+    },
+    "budget": {
+      "type": "number",
+      "description": "Budget USD e.g. 500000",
+      "default": 500000
+    }
+  }
+}
