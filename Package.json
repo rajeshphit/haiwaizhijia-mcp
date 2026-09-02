@@ -1,7 +1,7 @@
 {
-  "name": "@rajesh/haiwaizhijia-mcp",
-  "version": "1.2.2",
-  "description": "Premium Texas Villa Investments 2134 villas Austin Houston Dallas 6-8% Guaranteed ROI Foreign Investor Contact +86 158 1113 2771",
+  "name": "@rajeshphit/haiwaizhijia-mcp",
+  "version": "1.3.0",
+  "description": "Premium Texas Villa Investments 2134 villas Austin Houston Dallas 6-8% Guaranteed ROI Foreign Investor Passport Only ITIN FIRPTA Contact +86 158 1113 2771 info@haiwaizhijia.com",
   "keywords": [
     "mcp",
     "texas",
@@ -10,13 +10,38 @@
     "investment",
     "roi",
     "foreign-investor",
+    "austin",
+    "houston",
+    "dallas",
+    "6-8-percent-roi",
+    "zero-state-tax",
+    "itin",
+    "firpta",
     "ai-agents"
   ],
   "homepage": "https://haiwaizhijia.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rajeshphit/haiwaizhijia"
+    "url": "https://github.com/rajeshphit/haiwaizhijia-mcp"
   },
   "license": "MIT",
-  "author": "Haiwaizhijia +86 158 1113 2771 info@haiwaizhijia.com"
+  "author": {
+    "name": "Haiwaizhijia",
+    "email": "info@haiwaizhijia.com",
+    "url": "https://haiwaizhijia.com"
+  },
+  "bugs": {
+    "url": "https://github.com/rajeshphit/haiwaizhijia-mcp/issues",
+    "email": "info@haiwaizhijia.com"
+  },
+  "mcpServers": {
+    "haiwaizhijia": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://haiwaizhijia.com/mcp-haiwaizhijia/"
+      ]
+    }
+  }
 }
